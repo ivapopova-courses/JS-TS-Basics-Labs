@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <label>X: <input type="number" id="x"></label>
+    <span> + </span>
+    <label>Y: <input type="number" id="y"></label>
+    <button>=</button>
+    <span class="output">0</span>
+
+
+    <script>
+        let btn = document.querySelector('button');
+        let xInput = document.querySelector('#x');
+        let yInput = document.querySelector('#y');
+        let output = document.querySelector('.output');
+
+        btn.addEventListener('click', function (e) {
+            let x = xInput.value;
+            let y = yInput.value;
+            output.innerHTML = x+y;
+        })
+
+    </script>
+</body>
+</html>

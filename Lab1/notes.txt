@@ -1,0 +1,25 @@
+4уч.часа * 40 + 2*10 минути почивка
+
+
+# ------------------------- open-source: отворен код ------------------------- #
+
+open-source code != free code
+
+
+bug vs error
+
+# ---------------------------- Keyboard Shortcuts ---------------------------- #
+CTRL+S => save file
+CTRL+A => select all
+CTRL+C => copy
+CTRL+V => paste
+CTRL+X => cut
+
+
+# ----------------------------- Script Languange ----------------------------- #
+Script Languages (JavaScript, PHP, Python, Ruby...)
+
+Compiled Languages (C++, Java, C#)
+
+
+JavaScript == ECMAScript (ES), latest version: ES2023
