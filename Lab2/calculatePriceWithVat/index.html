@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #user_data div{
+            margin-top: 1em;
+            width: 50%;
+        }
+        #output{
+            border: 1px solid #000;
+            min-height: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculate price with VAT</h1>
+    <div id="user_data">
+        <div><label>Price without VAT: <input id="priceWithoutVat" type="number"></label></div>
+        <div><label>VAT: <input id="vat" type="number"></label></div>
+        <div><button id="calcPrice">Calculate</button></div>
+        <div id="output"></div>
+    </div>
+
+    <script>
+        let priceWithoutVatInput = document.querySelector('#priceWithoutVat');
+        let vatInput = document.querySelector('#vat');
+        let calcPriceBtn = document.querySelector('#calcPrice');
+        let output = document.querySelector('#output');
+
+
+        calcPriceBtn.addEventListener('click', function(event){
+            let priceWithoutVat = priceWithoutVatInput.value;
+            let vat = vatInput.value/100;
+
+            let priceWithVat = priceWithoutVat + (priceWithoutVat * vat);
+
+            output.innerHTML = priceWithVat;
+        })
+    </script>
+</body>
+</html>
