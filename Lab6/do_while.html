@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // TASK: user must enter a number [1..10]
+        //// Bad solution with while
+        // let x = prompt('Enter number [1..10]')*1;
+
+        // // while the user number is invalid=> prompt for number
+        // while( x<1 || x>10 ){
+        //     x = prompt('Enter number [1..10]')*1
+        //     alert(`x<1 || x>10 = ${x<1 || x>10}; x=${x}; type of x=${typeof(x)}; `)
+        // }
+
+        //// Good solution with while
+        let x;
+
+        do{
+            x = prompt('Enter number[1..10]')*1;
+        }while( x<1 || x>10 )
+
+
+
+
+        // Do something with valid x:
+        console.log(x);
+
+    </script>
+</body>
+</html>
