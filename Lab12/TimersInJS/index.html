@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+</head>
+<body>
+    <button id="btnStart">Greet after 5 seconds</button>
+    <button id="btnStop">Stop</button>
+    <div id="output"></div>
+
+    <script>
+        function greet(userName){
+            console.log(`Hello, ${userName}`);
+            output.innerHTML = `Hello, ${userName}`;
+        };
+
+
+        const btnStart = document.querySelector('#btnStart');
+        const btnStop = document.querySelector('#btnStop');
+        const output = document.querySelector('#output');
+
+        let timer1ID;
+
+        btnStart.addEventListener('click', function() {
+            timer1ID = setTimeout( ()=>{greet('Maria')}, 3000);
+        })
+
+
+        btnStop.addEventListener('click', function() {
+            clearInterval(timer1ID)
+        })
+
+
+
+    </script>
+    <!-- <script src="./examples.js"></script> -->
+</body>
+</html>
