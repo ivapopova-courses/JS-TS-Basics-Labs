@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en" id="vip">
+    <head>
+        <meta chtmlharset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Intro</title>
+        <!-- <link rel="stylesheet" href="style.css"> -->
+    </head>
+    <body>
+        <h1 id="foo"><strong>World</strong> !
+            <!-- ------------------------------- comment ------------------------------- -->
+        </h1>
+
+        <script>
+            // // Get DOM nodes
+            // const h1 = document.getElementById('foo');
+            // const body = document.body;
+
+            // h1.innerHTML = '<div>Hello</div>'
+            // console.log(h1.innerHTML);
+            // console.log(h1.innerText);
+
+            <!-- ---------------- TASK: change 'Hello' in h1 to 'Howdy' ---------------- -->
+            // // Step 1: get h1 DOM Element:
+            // const h1 = document.getElementById('foo');
+            // h1.innerHTML = h1.innerHTML.replace('Hello', 'Howdy');
+
+            // <!-- ------------- TASK: remove leading text in h1.innerHTML -------------- -->
+            // Step 1: get h1 DOM Element:
+            const h1 = document.getElementById('foo');
+            // Step 2: remove first child element, if it is a text node:
+            const firstChild = h1.childNodes[0];
+
+            if(firstChild.nodeName === '#text'){
+                h1.removeChild(firstChild);
+            }
+
+        </script>
+    </body>
+</html>
+

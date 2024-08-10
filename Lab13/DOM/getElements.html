@@ -1,0 +1,68 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElements </title>
+    <style>
+        /* #li1{
+           background-color: aqua;
+        } */
+        /* CSS combinators */
+        ul>.red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- SEnd as HW: change border to input type="password" -->
+    <form action="">
+        user name: <input type="text" name="">
+        user pass: <input type="password" name="">
+    </form>
+    <h1 id="h1" "red">Demo</h1>
+    <ul>
+        <li class="red">Item 1</li>
+        <li class="blue">Item 2</li>
+        <li class="red">Item 3</li>
+        <li class="blue">Item 4</li>
+        <li class="red">Item 5</li>
+    </ul>
+
+
+
+    <script>
+        // Get element by ID:
+        console.dir(document.getElementById('h1'));
+        console.dir(document.querySelector('.red'));
+
+        // // Change innerHtml to all .red elements
+        // let redNodes = document.getElementsByClassName('red');
+        // console.dir(redNodes);
+        // for (let i = 0; i < redNodes.length; i++) {
+        //     const element = redNodes[i];
+        //     element.innerHTML = 'Changed'
+        // }
+
+        // Change inner-Html to all .red elements in ul
+        // const ul = document.getElementsByTagName('ul')[0];
+
+        // let redNodes = ul.getElementsByClassName('red');
+        // console.dir(redNodes);
+        // for (let i = 0; i < redNodes.length; i++) {
+        //     const element = redNodes[i];
+        //     element.innerHTML = 'Changed'
+        // }
+
+        // Change inner-Html to all .red elements in ul using querySelectorALl method
+        // const items = document.querySelectorAll('ul>.red');
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

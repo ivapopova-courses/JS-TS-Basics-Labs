@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index </title>
+</head>
+<body>
+    <input type="text">
+    <button onclick="clickHandler()" ondblclick="dblClick()">Click</button>
+    <hr>
+    <div class="output"></div>
+
+    <script>
+        function clickHandler() {
+            count+=1;
+            output.innerHTML+=`You have clicked ${count} times!\n`;
+            console.log(`count = ${count}`);
+        }
+
+        function dblClick() {
+            console.log(`DOuble click`);
+        }
+
+        const output = document.querySelector('.output');
+        let count = 0;
+    </script>
+</body>
+</html>

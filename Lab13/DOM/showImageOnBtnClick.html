@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>showImageOnBtnClick </title>
+</head>
+<body>
+    <h1>Show image on click</h1>
+    <img src="" alt="test Image" id="testImage">
+    <button id="btnShowImage">Show image</button>
+
+    <script>
+        const btnShowImage = document.getElementById('btnShowImage');
+        const img = document.getElementById('testImage');
+
+        btnShowImage.addEventListener('click', function() {
+            // Set img.src='../../images/miro.medium.com_v2_resize_fit_1358_1_xLq_hFKV_8-_Yrr9ZZBC5Q.jpeg.png'
+
+            // Variant 1:
+            // const imgSrc = img.getAttributeNode('src');
+            // imgSrc.value = '../../images/miro.medium.com_v2_resize_fit_1358_1_xLq_hFKV_8-_Yrr9ZZBC5Q.jpeg.png';
+
+            // Variant 2:
+            img.src = '../../images/miro.medium.com_v2_resize_fit_1358_1_xLq_hFKV_8-_Yrr9ZZBC5Q.jpeg.png';
+        })
+    </script>
+</body>
+</html>
