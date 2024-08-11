@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test-box{
+            width: 80%;
+            height: 10em;
+            background-color: red;
+        }
+        input[name="taskName"]{
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+   <div>
+        <label>Enter task: <input type="text" name="taskName"></label>
+        <button class="btnAddTask">Add</button>
+        <ul class="output"></ul>
+        <hr>
+        <div class="test-box"></div>
+        <button class="btnChangeColor">Change test box color</button>
+
+   </div>
+
+    <script>
+        function addTask() {
+            console.log(`addTask was called`);
+            let taskName = taskNameInput.value;
+            output.innerHTML += `<li>${taskName}</li>`
+        }
+
+        function changeColor(colorName){
+            return ()=>{
+                testBox.style.backgroundColor = colorName;
+            }
+        }
+
+        // Get DOM nodes
+        const btnAddTask = document.querySelector('.btnAddTask');
+        const btnChangeColor = document.querySelector('.btnChangeColor');
+        const taskNameInput = document.querySelector('input[name="taskName"]');
+        const output = document.querySelector('.output');
+        const testBox = document.querySelector('.test-box');
+
+        // Add click event on btnAddTask:
+        btnAddTask.addEventListener('click', addTask );
+
+        // Add keypress event on taskNameInput
+        taskNameInput.addEventListener('keypress', (event)=>{
+            console.dir(event);
+            if(event.key==='Enter'){
+                addTask();
+            }
+        })
+        // Add click event on btnChangeColor:
+        btnChangeColor.addEventListener('click', changeColor('green') )
+    </script>
+</body>
+</html>

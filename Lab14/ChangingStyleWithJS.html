@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .small-box{
+            width: 100px;
+            height: 50px;
+        }
+        .red{
+            background-color:red;
+        }
+        .big-circle{
+            border-radius: 100%;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="small-box red" id="div1" style=""></div>
+    <button class="btnChangeColor">Make test box green circle</button>
+
+
+    <script>
+        const div1 = document.querySelector('#div1');
+        const btnChangeColor = document.querySelector('.btnChangeColor');
+
+        // get inline style for div1
+        const div1InlineStyle = div1.style;
+
+        //get all style for div1
+        const div1ComputedStyle = window.getComputedStyle(div1);
+
+        // console.dir(div1InlineStyle);
+        // console.dir(div1ComputedStyle);
+
+
+        btnChangeColor.addEventListener('click', (e)=>{
+            // Change div1 inline style:
+            // div1InlineStyle.backgroundColor = 'green'
+
+            // Change div1 class to big-green-circle:
+            // div1.className = 'big-green-circle';
+            console.dir(div1.classList);
+
+            div1.classList.toggle('big-circle')
+        })
+
+
+    </script>
+</body>
+</html>
