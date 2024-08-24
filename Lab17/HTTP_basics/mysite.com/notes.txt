@@ -1,0 +1,18 @@
+URL = (Uniform Resource Locator )
+
+
+
+https://host => https://wwwcourses.github.io
+
+https://host:port => https://wwwcourses.github.io:443
+
+https://host/path =>
+
+protocol=https
+
+host=wwwcourses.github.io
+
+path=/ProgressBG-JS-Basics-Slides/pages/themes/HTTPBasicsAndAJAX/images/big/HTTP_ClientServerSystem.png
+
+
+chrome://flags/
