@@ -25,7 +25,7 @@ function toggleTodoCompletion(index) {
     todo.completed = !todos[index].completed;
 
     // change server state
-    fetchTodos(`${todosAPI}/${todo.id}`, {
+    fetch(`${todosAPI}/${todo.id}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
