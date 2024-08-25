@@ -1,0 +1,10 @@
+[
+    {
+        "task": "Learn HTML",
+        "completed": true
+    },
+    {
+        "task": "Learn CSS",
+        "completed": false
+    }
+]

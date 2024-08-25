@@ -1,0 +1,10 @@
+<tasks>
+    <task>
+        <name>Learn HTML</name>
+        <completed>true</completed>
+    </task>
+    <task>
+        <name>Learn CSS</name>
+        <completed>false</completed>
+    </task>
+</tasks>
