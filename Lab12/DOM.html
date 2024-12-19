@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <style>
+        .red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="test">test</h1>
+    <h2>test againg</h2>
+    <!-- comment1 -->
+    <script>
+        // const body = document.body;
+        // // console.dir(body);
+
+        // console.dir(body.childNodes);
+        // console.dir(body.children);
+
+        // const h1 = body.childNodes[1];
+        // console.dir(h1.childNodes[0]);
+        // console.dir(h1.innerHTML);
+        // console.dir(h1.innerText);
+        // h1.innerHTML = `<span>Hello</span>`;
+        // h1.innerText = `<span>Hello</span>`;
+
+        const bodyChilds = body.childNodes;
+        // console.log(bodyChilds[0].nodeType);
+        // console.log(bodyChilds[0].nodeName);
+
+        // TASK: log HTML content of each body element child
+        // for (let i = 0; i < bodyChilds.length; i++) {
+        //     const element = bodyChilds[i];
+        //     console.log(`${element.nodeName}: ${element.nodeType}`);
+
+        //     if(element.nodeType===1){
+        //         element.className = 'red';
+        //     }
+        // }
+
+        // for (let i = 0; i < body.children.length; i++) {
+        //     const element = body.children[i];
+        //     element.className = 'red';
+
+        // }
+
+
+
+
+
+    </script>
+</body>
+</html>

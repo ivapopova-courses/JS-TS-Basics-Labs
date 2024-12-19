@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventObject </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+</head>
+<body>
+    <input type="text">
+    <button>Get value</button>
+    <div class="output"></div>
+
+    <script>
+        // function addEventListener(event, f) {
+        //     f({
+        //         key: 'a'
+        //     });
+        // }
+        const dom = {
+            input : document.querySelector('input'),
+            output : document.querySelector('.output'),
+            btn : document.querySelector('button'),
+        };
+
+        dom.btn.addEventListener('click', function (e) {
+            console.dir(e);
+            dom.output.innerHTML = dom.input.value;
+        })
+
+        dom.input.addEventListener('keypress', function (e) {
+            console.dir(e);
+            console.log(dom.input.value);
+            if(e.code==='Enter'){
+                dom.output.innerHTML = dom.input.value;
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper>p:nth-child(2){
+            background-color:red
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <p>Paragrph1</p>
+        <p>Paragrph2</p>
+        <p>Paragrph3</p>
+    </div>
+
+    <script>
+        // console.dir(document.getElementsByClassName('wrapper')[0]);
+        // console.dir(document.querySelectorAll('.wrapper'));
+
+
+        // const p2 = document.getElementsByClassName('wrapper')[0].children[1];
+        // console.dir(p2);
+        // const p2 = document.querySelector('.wrapper>p:nth-child(2)')
+        // p2.innerHTML = 'changed';
+    </script>
+</body>
+</html>

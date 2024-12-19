@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <p id="p1" class="test">Paragprah1</p>
+    </div>
+    <p class="test"></p>
+
+    <script>
+        // const p1 = document.getElementById('p1');
+        const testElements = document.getElementsByClassName('test');
+        // console.dir(p1);
+        console.dir(testElements);
+        // testElements[0].innerHTML = 'Hello';
+
+        const div = document.getElementsByClassName('wrapper')[0];
+        const testElementsInDiv = div.getElementsByClassName('test');
+        console.dir(testElementsInDiv);
+
+    </script>
+</body>
+</html>

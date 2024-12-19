@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>name: <input type="text"></label>
+    <!-- <button onclick="clickHandler()">Get name</button> -->
+    <button>Get name</button>
+    <div class="output"></div>
+    <div class="counter">
+        <button id="btnCounter">Create Counter</button>
+        <!-- <div class="counter-output">1</div> -->
+    </div>
+    <script>
+
+        function clickHandler() {
+            dom.output.innerHTML = dom.input.value;
+            clickCount++;
+            dom.counterOutput.innerHTML = clickCount;
+            console.log(`clickCount: ${clickCount}`);
+        }
+
+        // Get DOM elements
+        const dom = {
+            input : document.querySelector('input'),
+            output : document.querySelector('.output'),
+            btn : document.querySelector('button'),
+            btnCouner : document.querySelector('#btnCounter'),
+            counter : document.querySelector('.counter'),
+        }
+
+        let clickCount = 1;
+
+        // Atach events
+        dom.btn.addEventListener( 'click', clickHandler );
+        dom.btnCouner.addEventListener('click', ()=> {
+            dom.counter.innerHTML += `<div class="counter-output">${clickCount}</div>`;
+            dom.counterOutput = document.querySelector('.counter-output');
+        })
+
+
+    </script>
+</body>
+</html>
