@@ -68,10 +68,12 @@ console.log(sumOfSquaredEvens(arr));
 //it works...
 // TODO: think of one expression solution
 const findMinPopulationCityName = cities => {
-    let cityMinPopulation =
-        cities
-            .map(city => city.population)
-            .reduce((a,c)=>a>c?c:a);
+    // let cityMinPopulation =
+    //     cities
+    //         .map(city => city.population)
+    //         .reduce((a,c)=>a>c?c:a);
+
+    let cityMinPopulation = Math.min(...cities.map(c=>c.population))
 
     //return the city name
     return cities
